@@ -7,6 +7,4 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('mi-primera-app');
-}
+export class App {}
