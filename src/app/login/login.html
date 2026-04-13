@@ -1,6 +1,13 @@
 <h2>Login</h2>
 <input type="text" placeholder="Usuario">
 <input type="password" placeholder="Contraseña">
-<a routeLink="/dashboard">Ir al Dashboard</a>
+<a routerLink="/dashboard">Ir al Dashboard</a>
+<button (click)="openModal()">Abrir Modal</button>
 
-<button>Entrar</button>
+
+
+<app-form
+  [title]="'Login'"
+  [showEmail]="false"
+  (formSubmit)="handleLogin($event)">
+</app-form>

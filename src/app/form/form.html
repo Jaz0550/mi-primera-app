@@ -1,0 +1,29 @@
+<h2>{{ title }}</h2>
+
+<form (ngSubmit)="submit()">
+
+  <input 
+    type="text" 
+    placeholder="Usuario" 
+    [(ngModel)]="user.username"
+    name="username"
+  >
+
+  <input 
+    *ngIf="showEmail"
+    type="email" 
+    placeholder="Correo" 
+    [(ngModel)]="user.email"
+    name="email"
+  >
+
+  <input 
+    type="password" 
+    placeholder="Contraseña" 
+    [(ngModel)]="user.password"
+    name="password"
+  >
+
+  <button type="submit">Enviar</button>
+
+</form>
